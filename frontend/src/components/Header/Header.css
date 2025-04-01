@@ -1,24 +1,31 @@
 .header{
     height: 34vw;
     margin: 30px auto;
-    background: url('/header_img.png') no-repeat;
-    background-size:contain;
+    background: url('https://png.pngtree.com/background/20210710/original/pngtree-black-meat-western-food-banner-background-picture-image_1013905.jpg') no-repeat;
+    background-size:cover;
     position: relative;
+    border-radius: 10px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
 }
 .header-contents{
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+    
     gap: 1.5vw;
     max-width: 50%;
-    bottom: 10%;
-    left: 6vw;
+    text-align: center;
     animation: fadeIn 3s;
+    
+
 }
 .header-contents h2{
     font-weight:500;
-    color: white;
+    color: orange;
     font-size: max(4.5vw,22px);
 }
 .header-contents p{
@@ -27,10 +34,10 @@
 }
 .header-contents button{
     border: none;
-    color: #747474;
+    color: white;
     font-weight: 500;
     padding: 1vw 2.3vw;
-    background: white;
+    background: rgb(158, 190, 231);
     font-size: max(1vw,13px);
     border-radius: 50px;
 }
